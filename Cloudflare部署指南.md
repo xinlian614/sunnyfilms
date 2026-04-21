@@ -62,12 +62,14 @@ SunnyFilms/
 
 ### 第四步：配置 KV 绑定（关键！）
 
-1. 在 **Environment variables** 部分
-2. 点击 **KV namespace bindings**（在 Variables 旁边）
+1. 进入 Pages 项目后，点击 **Settings** → **Functions**
+2. 向下找到 **KV namespace bindings**
 3. 点击 **Add binding**
-4. **Variable name**: `SUNNYFILMS_KV`
+4. **Variable name**: `SUNNYFILMS_KV`（必须完全一致！）
 5. **KV namespace**: 选择刚才创建的 `sunnyfilms-kv`
-6. 保存
+6. 点击 **Save**
+
+**重要提示**：如果没有配置 KV 绑定，API 会使用内存缓存，但重启会丢失，但静态页面可以正常访问！
 
 ### 第五步：开始部署
 
