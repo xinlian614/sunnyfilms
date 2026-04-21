@@ -1,0 +1,15 @@
+name = "sunnyfilms"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Cloudflare KV 命名空间配置
+# 需要先在 Cloudflare Dashboard 创建 KV 命名空间
+# 然后将下面的 ID 替换为你的命名空间 ID
+[[kv_namespaces]]
+binding = "SUNNYFILMS_KV"
+id = "your-kv-namespace-id-here"
+preview_id = "your-kv-namespace-id-here"
+
+# 静态文件目录（Cloudflare Pages 会自动使用 public 目录）
+[site]
+bucket = "./public"

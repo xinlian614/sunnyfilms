@@ -1,0 +1,11 @@
+{
+  "name": "guanren-yingshi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sunny影视 - 基于红牛资源 JSON API 的本地影视站原型",
+  "scripts": {
+    "start": "node server.js",
+    "start:local": "powershell -ExecutionPolicy Bypass -File .\\start-local.ps1",
+    "stop:local": "powershell -ExecutionPolicy Bypass -File .\\stop-local.ps1"
+  }
+}

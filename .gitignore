@@ -1,0 +1,7 @@
+node_modules/
+data/*.json
+!data/.gitkeep
+server.stdout.log
+server.stderr.log
+.server.pid
+.DS_Store
