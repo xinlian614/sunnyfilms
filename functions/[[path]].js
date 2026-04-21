@@ -80,7 +80,10 @@ export async function onRequest(context) {
   const pathname = url.pathname;
 
   try {
-    await ensureInitialized(env);
+    // 只有 API 请求才需要初始化，静态文件直接返回
+    if (pathname.startsWith('/api/')) {
+      await ensureInitialized(env);
+    }
 
     if (pathname === '/api/health' && request.method === 'GET') {
       return handleHealth(env);
