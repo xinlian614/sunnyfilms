@@ -1,0 +1,2193 @@
+{
+  "version": 1,
+  "exportedAt": "2026-04-20T06:53:26.375Z",
+  "logs": [
+    {
+      "id": "log_7c19e6385d5d",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 1129,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:11:18.502Z"
+    },
+    {
+      "id": "log_11d4100c7456",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=4",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "4"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 4993,
+        "page": 1,
+        "pagecount": 250,
+        "sampleCount": 20
+      },
+      "durationMs": 828,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:11:19.347Z"
+    },
+    {
+      "id": "log_550aba86ab1a",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 447,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:11:22.275Z"
+    },
+    {
+      "id": "log_0a2150f5f575",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1951,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:15:47.921Z"
+    },
+    {
+      "id": "log_08a949178a96",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 1014,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:21:48.033Z"
+    },
+    {
+      "id": "log_aed18b5208a6",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 505,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:21:48.560Z"
+    },
+    {
+      "id": "log_fe41af752bf0",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 943,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:34:35.726Z"
+    },
+    {
+      "id": "log_f0048a34386a",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 1022,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:35:39.174Z"
+    },
+    {
+      "id": "log_b8757ecf6f50",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 1259,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:40:26.480Z"
+    },
+    {
+      "id": "log_9c8ea88f76e4",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101298,
+        "page": 1,
+        "pagecount": 5065,
+        "sampleCount": 20
+      },
+      "durationMs": 510,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:40:27.005Z"
+    },
+    {
+      "id": "log_efc3f84bab3a",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1659,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:41:23.320Z"
+    },
+    {
+      "id": "log_98f2d897808c",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1932,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:42:56.573Z"
+    },
+    {
+      "id": "log_c59922857b9d",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 243,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:42:56.834Z"
+    },
+    {
+      "id": "log_bafbc42f8b1d",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1649,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T01:46:12.841Z"
+    },
+    {
+      "id": "log_3396f1b6e276",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1797,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:41:46.354Z"
+    },
+    {
+      "id": "log_fedfa33f5fb5",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 2007,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:42:57.433Z"
+    },
+    {
+      "id": "log_4958cf7e9c4f",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 290,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:42:57.740Z"
+    },
+    {
+      "id": "log_d31bd29dcd16",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1877,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:46:46.591Z"
+    },
+    {
+      "id": "log_9db8fb9605fa",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "search",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1&wd=%E9%BE%99%E7%8F%A0",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "龙珠"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 22,
+        "page": 1,
+        "pagecount": 2,
+        "sampleCount": 20
+      },
+      "durationMs": 2769,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:47:15.505Z"
+    },
+    {
+      "id": "log_d4c5159f7bf6",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "detail",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&ids=107029",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "107029"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 1111,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:47:21.250Z"
+    },
+    {
+      "id": "log_0648dd867972",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1&t=23",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "23"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1991,
+        "page": 1,
+        "pagecount": 100,
+        "sampleCount": 20
+      },
+      "durationMs": 987,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:47:26.645Z"
+    },
+    {
+      "id": "log_0f3d81158bc4",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95495,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1089,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:55:58.365Z"
+    },
+    {
+      "id": "log_99d533b6a89a",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "categories",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95495,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 701,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:56:36.942Z"
+    },
+    {
+      "id": "log_ddf98f6ebe6a",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95495,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 675,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:56:37.631Z"
+    },
+    {
+      "id": "log_ca159baa689d",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1&wd=%E9%BE%99%E7%8F%A0",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "龙珠"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 37,
+        "page": 1,
+        "pagecount": 2,
+        "sampleCount": 20
+      },
+      "durationMs": 797,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:57:03.805Z"
+    },
+    {
+      "id": "log_87fd08ecbc0d",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=2&wd=%E9%BE%99%E7%8F%A0",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "2",
+          "wd": "龙珠"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 47,
+        "page": 2,
+        "pagecount": 3,
+        "sampleCount": 20
+      },
+      "durationMs": 1815,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:57:50.227Z"
+    },
+    {
+      "id": "log_2225ee5ce21a",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1&wd=%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%AB",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "假面骑士"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 81,
+        "page": 1,
+        "pagecount": 5,
+        "sampleCount": 20
+      },
+      "durationMs": 1561,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:58:41.738Z"
+    },
+    {
+      "id": "log_c56a7ff3d629",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "detail",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&ids=86601",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "86601"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 383,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:59:15.711Z"
+    },
+    {
+      "id": "log_8eee3a57e01a",
+      "providerId": "provider_df687b2c742d",
+      "providerName": "非凡综合资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&pg=1&t=30",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "30"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 5298,
+        "page": 1,
+        "pagecount": 265,
+        "sampleCount": 20
+      },
+      "durationMs": 326,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T02:59:18.147Z"
+    },
+    {
+      "id": "log_d8d449fb94dd",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 899,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:00:24.720Z"
+    },
+    {
+      "id": "log_47e90c82c084",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 238,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:00:24.978Z"
+    },
+    {
+      "id": "log_9d5bf38acbf1",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "search",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1&wd=%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%AB",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "假面骑士"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 37,
+        "page": 1,
+        "pagecount": 2,
+        "sampleCount": 20
+      },
+      "durationMs": 2290,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:00:32.784Z"
+    },
+    {
+      "id": "log_28489409be3a",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "detail",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&ids=86925",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "86925"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 534,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:00:36.694Z"
+    },
+    {
+      "id": "log_d13b73ed95e6",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1&t=25",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "25"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 2254,
+        "page": 1,
+        "pagecount": 113,
+        "sampleCount": 20
+      },
+      "durationMs": 556,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:00:39.351Z"
+    },
+    {
+      "id": "log_a04d5eda0d10",
+      "providerId": "provider_3caef0c72ab9",
+      "providerName": "金鹰资源",
+      "operation": "home",
+      "request": {
+        "url": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101571,
+        "page": 1,
+        "pagecount": 5079,
+        "sampleCount": 20
+      },
+      "durationMs": 1962,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:14:22.324Z"
+    },
+    {
+      "id": "log_be51cc96c1b7",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "categories",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1329,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:16:42.331Z"
+    },
+    {
+      "id": "log_942ab753495b",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 362,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:16:42.705Z"
+    },
+    {
+      "id": "log_299693dcb17b",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 7975,
+        "page": 1,
+        "pagecount": 399,
+        "sampleCount": 20
+      },
+      "durationMs": 1177,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T03:17:02.849Z"
+    },
+    {
+      "id": "log_fd3aad05f0c6",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "categories",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1445,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:36:59.872Z"
+    },
+    {
+      "id": "log_6bea81da112e",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 7975,
+        "page": 1,
+        "pagecount": 399,
+        "sampleCount": 20
+      },
+      "durationMs": 620,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:37:00.504Z"
+    },
+    {
+      "id": "log_71eb8c655611",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "categories",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1179,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:38:54.071Z"
+    },
+    {
+      "id": "log_b3cde5886ec4",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 3012,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:38:57.096Z"
+    },
+    {
+      "id": "log_489c228a7d18",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1216,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:43:41.554Z"
+    },
+    {
+      "id": "log_7e690c5a7a10",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&wd=%E6%8B%94%E4%BD%9C",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "拔作"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 417,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:44:22.438Z"
+    },
+    {
+      "id": "log_761563bbe02d",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "detail",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&ids=84213",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "84213"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 412,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:44:29.423Z"
+    },
+    {
+      "id": "log_b0774dd6e439",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=30",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "30"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 5298,
+        "page": 1,
+        "pagecount": 265,
+        "sampleCount": 20
+      },
+      "durationMs": 484,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:44:32.277Z"
+    },
+    {
+      "id": "log_79307c47e2d0",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&wd=%E6%8B%94%E4%BD%9C",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "拔作"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 660,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:46:38.926Z"
+    },
+    {
+      "id": "log_bfbfe086da3a",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "search",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=1&wd=%E6%8B%94%E4%BD%9C",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "1",
+          "wd": "拔作"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 401,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:46:48.653Z"
+    },
+    {
+      "id": "log_8549708c8c2f",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 416,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:46:56.704Z"
+    },
+    {
+      "id": "log_92fb1d1e3b3f",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 95494,
+        "page": 1,
+        "pagecount": 4775,
+        "sampleCount": 20
+      },
+      "durationMs": 1001,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:47:01.374Z"
+    },
+    {
+      "id": "log_dcccba30c6d3",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=12",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "12"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 356,
+        "page": 1,
+        "pagecount": 18,
+        "sampleCount": 20
+      },
+      "durationMs": 462,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:47:04.539Z"
+    },
+    {
+      "id": "log_a12f4c940337",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 7975,
+        "page": 1,
+        "pagecount": 399,
+        "sampleCount": 20
+      },
+      "durationMs": 1030,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:47:11.410Z"
+    },
+    {
+      "id": "log_241a445ba12e",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=14",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "14"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 2318,
+        "page": 1,
+        "pagecount": 116,
+        "sampleCount": 20
+      },
+      "durationMs": 1352,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:47:36.225Z"
+    },
+    {
+      "id": "log_92766910b6be",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=15",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "15"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1212,
+        "page": 1,
+        "pagecount": 61,
+        "sampleCount": 20
+      },
+      "durationMs": 503,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:00.972Z"
+    },
+    {
+      "id": "log_0ada01d2aade",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=16",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "16"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 5119,
+        "page": 1,
+        "pagecount": 256,
+        "sampleCount": 20
+      },
+      "durationMs": 1082,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:11.274Z"
+    },
+    {
+      "id": "log_29130062a0c9",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=17",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "17"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 408,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:19.342Z"
+    },
+    {
+      "id": "log_3c0b776678b9",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=18",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "18"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 230,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:23.008Z"
+    },
+    {
+      "id": "log_3f78e4627702",
+      "providerId": "provider_5b39a3de88c4",
+      "providerName": "非凡M3U8资源",
+      "operation": "home",
+      "request": {
+        "url": "http://api.ffzyapi.com/api.php/provide/vod/from/ffm3u8/at/json/?ac=detail&pg=1&t=19",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "19"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 229,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:26.310Z"
+    },
+    {
+      "id": "log_2fb4e5efc244",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101309,
+        "page": 1,
+        "pagecount": 5066,
+        "sampleCount": 20
+      },
+      "durationMs": 1005,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:41.893Z"
+    },
+    {
+      "id": "log_a84bdc5b8138",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101309,
+        "page": 1,
+        "pagecount": 5066,
+        "sampleCount": 20
+      },
+      "durationMs": 498,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:42.411Z"
+    },
+    {
+      "id": "log_fc19e11a4633",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 500,
+        "page": 1,
+        "pagecount": 25,
+        "sampleCount": 20
+      },
+      "durationMs": 519,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:48:46.547Z"
+    },
+    {
+      "id": "log_344ff48c9eb8",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=2&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "2",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 500,
+        "page": 2,
+        "pagecount": 25,
+        "sampleCount": 20
+      },
+      "durationMs": 996,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:49:54.061Z"
+    },
+    {
+      "id": "log_2f2040419711",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=3&t=13",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "3",
+          "t": "13"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 500,
+        "page": 3,
+        "pagecount": 25,
+        "sampleCount": 20
+      },
+      "durationMs": 1184,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:50:22.118Z"
+    },
+    {
+      "id": "log_1fcab3bf0f9d",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=29",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "29"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 1058,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:51:16.643Z"
+    },
+    {
+      "id": "log_24c283b33c60",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=30",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "30"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 31437,
+        "page": 1,
+        "pagecount": 1572,
+        "sampleCount": 20
+      },
+      "durationMs": 591,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:51:20.459Z"
+    },
+    {
+      "id": "log_205b7ffcc77f",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=2",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "2"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 0,
+        "page": 1,
+        "pagecount": 0,
+        "sampleCount": 0
+      },
+      "durationMs": 1156,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:51:50.011Z"
+    },
+    {
+      "id": "log_11d405b1fdad",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101309,
+        "page": 1,
+        "pagecount": 5066,
+        "sampleCount": 20
+      },
+      "durationMs": 2091,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:51:58.803Z"
+    },
+    {
+      "id": "log_b10eb0e53c96",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "search",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&wd=%E6%AD%A3%E4%B9%89",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "正义"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 102,
+        "page": 1,
+        "pagecount": 6,
+        "sampleCount": 20
+      },
+      "durationMs": 2061,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:52:26.639Z"
+    },
+    {
+      "id": "log_da4052de5b3d",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "detail",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&ids=136682",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "136682"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 899,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T06:52:31.924Z"
+    },
+    {
+      "id": "log_a63c20d333e4",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101337,
+        "page": 1,
+        "pagecount": 5067,
+        "sampleCount": 20
+      },
+      "durationMs": 1315,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T09:12:36.319Z"
+    },
+    {
+      "id": "log_ed701888c0b4",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101337,
+        "page": 1,
+        "pagecount": 5067,
+        "sampleCount": 20
+      },
+      "durationMs": 1393,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-18T09:12:37.731Z"
+    },
+    {
+      "id": "log_ddb8b0225879",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101457,
+        "page": 1,
+        "pagecount": 5073,
+        "sampleCount": 20
+      },
+      "durationMs": 951,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T00:48:47.025Z"
+    },
+    {
+      "id": "log_211115b7dc3f",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101457,
+        "page": 1,
+        "pagecount": 5073,
+        "sampleCount": 20
+      },
+      "durationMs": 495,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T00:48:47.542Z"
+    },
+    {
+      "id": "log_45e6077cf09c",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "search",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&wd=%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%AB",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "假面骑士"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 38,
+        "page": 1,
+        "pagecount": 2,
+        "sampleCount": 20
+      },
+      "durationMs": 940,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T00:49:05.983Z"
+    },
+    {
+      "id": "log_54b89612255f",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "detail",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&ids=118246",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "118246"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 889,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T00:49:12.325Z"
+    },
+    {
+      "id": "log_50586fca0c35",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=4",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "4"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 4993,
+        "page": 1,
+        "pagecount": 250,
+        "sampleCount": 20
+      },
+      "durationMs": 922,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T00:49:44.131Z"
+    },
+    {
+      "id": "log_de3b353b48ed",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101526,
+        "page": 1,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 1103,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:00:31.074Z"
+    },
+    {
+      "id": "log_581ff18caa78",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101526,
+        "page": 1,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 1363,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:00:43.063Z"
+    },
+    {
+      "id": "log_3b3793553e39",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=2",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "2"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101526,
+        "page": 2,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 961,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:01:32.995Z"
+    },
+    {
+      "id": "log_d83ea50338bf",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "search",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&wd=%E5%B9%B4%E5%B9%B4%E6%9C%89",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "wd": "年年有"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 3,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 3
+      },
+      "durationMs": 1721,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:02:01.226Z"
+    },
+    {
+      "id": "log_22d6c7eb2722",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "detail",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&ids=134191",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "ids": "134191"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1,
+        "page": 1,
+        "pagecount": 1,
+        "sampleCount": 1
+      },
+      "durationMs": 1039,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:02:07.438Z"
+    },
+    {
+      "id": "log_293872d585da",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=20",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "20"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 1969,
+        "page": 1,
+        "pagecount": 99,
+        "sampleCount": 20
+      },
+      "durationMs": 647,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:02:11.475Z"
+    },
+    {
+      "id": "log_9572a5d27c54",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101526,
+        "page": 1,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 1752,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:03:01.119Z"
+    },
+    {
+      "id": "log_b4d78e130e2c",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1&t=4",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1",
+          "t": "4"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 5007,
+        "page": 1,
+        "pagecount": 251,
+        "sampleCount": 20
+      },
+      "durationMs": 1063,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:03:07.590Z"
+    },
+    {
+      "id": "log_49b1ee1b5617",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "categories",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": 1
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101537,
+        "page": 1,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 1200,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:53:25.420Z"
+    },
+    {
+      "id": "log_2c15428e849e",
+      "providerId": "provider_hongniu_default",
+      "providerName": "红牛资源",
+      "operation": "home",
+      "request": {
+        "url": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/at/json/?ac=detail&pg=1",
+        "method": "GET",
+        "params": {
+          "ac": "detail",
+          "pg": "1"
+        }
+      },
+      "response": {
+        "code": 1,
+        "total": 101537,
+        "page": 1,
+        "pagecount": 5077,
+        "sampleCount": 20
+      },
+      "durationMs": 940,
+      "success": true,
+      "errorMessage": "",
+      "createdAt": "2026-04-20T06:53:26.375Z"
+    }
+  ]
+}
