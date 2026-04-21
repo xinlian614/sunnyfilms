@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sunny影视图标">
+  <defs>
+    <linearGradient id="bg" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0%" stop-color="#ffd45c" />
+      <stop offset="55%" stop-color="#ff9a3d" />
+      <stop offset="100%" stop-color="#ff6b2c" />
+    </linearGradient>
+    <linearGradient id="shine" x1="24%" y1="16%" x2="78%" y2="84%">
+      <stop offset="0%" stop-color="#fff7cf" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="28" fill="#10233d" />
+  <rect x="18" y="18" width="92" height="92" rx="22" fill="url(#bg)" />
+  <circle cx="64" cy="48" r="18" fill="url(#shine)" opacity="0.85" />
+  <path d="M39 84c0-15.8 11.8-27 25.3-27 7.4 0 13.1 2.2 18.8 6.7l-8.4 10.1c-3.5-2.8-6.5-4.2-10.7-4.2-6.8 0-12 5.6-12 14.2 0 8.9 5.1 14.4 12.7 14.4 2.7 0 5.2-.6 7.2-1.7v-8.4h-9.1V77.8h21.5v24.3c-5.1 4.3-12.4 6.9-20.3 6.9C50.6 109 39 98.6 39 84Z" fill="#10233d"/>
+  <path d="M88 36 73.5 52.5l-7.3-6.7-7.4 8.2 14.8 13.3L98 40.2Z" fill="#10233d"/>
+</svg>
