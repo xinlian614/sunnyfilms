@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny影视 | 多接口影视站原型</title>
+    <meta name="description" content="Sunny影视本地开发版，支持多影视资源接口的自动切换、手动指定、搜索、筛选、详情浏览和独立播放。">
+    <meta name="keywords" content="Sunny影视,影视资源接口,红牛资源,金鹰资源,自动切换,手动指定,Node.js,M3U8">
+    <meta name="theme-color" content="#08101d">
+    <meta property="og:title" content="Sunny影视">
+    <meta property="og:description" content="支持多影视资源接口自动切换和手动指定的本地影视站原型。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="site-header">
+            <div class="header-bar">
+                <a class="brand" href="/" aria-label="Sunny影视首页">
+                    <span class="brand-mark">SY</span>
+                    <span class="brand-copy">
+                        <strong>Sunny影视</strong>
+                        <small>Sunny Streaming</small>
+                    </span>
+                </a>
+
+                <nav class="header-nav" aria-label="主导航">
+                    <button type="button" class="nav-pill is-active" data-nav-action="latest">最新上架</button>
+                    <button type="button" class="nav-pill" data-nav-action="movie">电影</button>
+                    <button type="button" class="nav-pill" data-nav-action="series">剧集</button>
+                    <button type="button" class="nav-pill" data-nav-action="anime">动漫</button>
+                    <a class="nav-pill nav-link" href="/admin.html">接口管理</a>
+                </nav>
+            </div>
+
+            <section class="hero-panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">RESPONSIVE CINEMA HUB</p>
+                    <h1>让多个影视资源接口在一个站里自动切换，也能手动指定</h1>
+                    <p class="hero-text">
+                        前端统一访问本地 `/api/*`，服务端按接口配置自动选择、自动故障切换。你也可以在首页临时手动锁定某个接口，
+                        方便联调、排障和多源接入测试。
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span>接入模式</span>
+                            <strong>自动切换 / 手动指定</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>运行方式</span>
+                            <strong>Windows 本地 Node</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>播放支持</span>
+                            <strong>M3U8 / 多线路</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="search-form" class="search-card">
+                    <div class="search-title-row">
+                        <div>
+                            <p class="eyebrow">SMART SEARCH</p>
+                            <h2>搜索、筛选，并控制使用哪个数据接口</h2>
+                        </div>
+                        <button id="refresh-button" type="button" class="ghost-button">刷新片单</button>
+                    </div>
+
+                    <label class="field-group field-group-full">
+                        <span>关键词</span>
+                        <input id="search-input" name="keyword" type="search" placeholder="输入片名、演员名或关键词">
+                    </label>
+
+                    <div class="field-grid">
+                        <label class="field-group">
+                            <span>搜索维度</span>
+                            <select id="field-select" name="field">
+                                <option value="all">综合搜索</option>
+                                <option value="name">按片名</option>
+                                <option value="actor">按演员</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>主分类</span>
+                            <select id="type-select" name="type">
+                                <option value="">全部分类</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>更新时间</span>
+                            <select id="hours-select" name="hours">
+                                <option value="">全部时间</option>
+                                <option value="24">24 小时</option>
+                                <option value="72">72 小时</option>
+                                <option value="168">最近 7 天</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>播放偏好</span>
+                            <select id="source-select" name="source">
+                                <option value="all">全部片源</option>
+                                <option value="hnm3u8">优先 M3U8</option>
+                                <option value="hnyun">优先云播</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>数据接口</span>
+                            <select id="provider-select" name="provider">
+                                <option value="">跟随后台默认</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>地区</span>
+                            <select id="area-select" name="area">
+                                <option value="">全部地区</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>年份</span>
+                            <select id="year-select" name="year">
+                                <option value="">全部年份</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="search-actions">
+                        <button type="submit" class="primary-button">立即搜索</button>
+                        <button id="reset-button" type="button" class="ghost-button">清空筛选</button>
+                    </div>
+                </form>
+            </section>
+        </header>
+
+        <main class="page-content">
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">RESOURCE PROVIDER</p>
+                        <h2>当前资源接口</h2>
+                    </div>
+                    <div id="summary-text" class="summary-text">正在加载接口状态...</div>
+                </div>
+                <div class="provider-status-grid">
+                    <article class="provider-status-card">
+                        <span>当前命中接口</span>
+                        <strong id="current-provider-name">加载中...</strong>
+                    </article>
+                    <article class="provider-status-card">
+                        <span>当前策略</span>
+                        <strong id="current-provider-mode">加载中...</strong>
+                    </article>
+                    <article class="provider-status-card">
+                        <span>说明</span>
+                        <strong id="current-provider-note">正在同步后台配置</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">CATEGORY ACCESS</p>
+                        <h2>资源导航</h2>
+                    </div>
+                    <div id="search-tip" class="summary-text"></div>
+                </div>
+                <div id="category-chips" class="category-chips"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">FEATURED PICKS</p>
+                        <h2>焦点推荐</h2>
+                    </div>
+                    <div id="result-meta" class="summary-text"></div>
+                </div>
+                <div id="featured-grid" class="featured-grid"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">RECENT WATCH</p>
+                        <h2>最近观看</h2>
+                    </div>
+                    <div class="summary-text">记录最近打开过的影片和剧集，方便本地联调时快速回看。</div>
+                </div>
+                <div id="recent-grid" class="recent-grid"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">CATALOG</p>
+                        <h2 id="results-title">最新片单</h2>
+                    </div>
+                </div>
+
+                <div id="active-filters" class="active-filters"></div>
+                <div id="movie-grid" class="movie-grid" aria-live="polite"></div>
+
+                <div id="empty-state" class="empty-state hidden">
+                    <h3>当前条件下没有找到片源</h3>
+                    <p>可以尝试更换关键词、取消地区和年份筛选，或者将数据接口改回跟随后台默认。</p>
+                </div>
+
+                <div class="pagination-bar">
+                    <button id="prev-page" type="button" class="ghost-button">上一页</button>
+                    <span id="page-indicator">第 1 / 1 页</span>
+                    <button id="next-page" type="button" class="ghost-button">下一页</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <aside id="detail-drawer" class="detail-drawer" aria-hidden="true">
+        <div class="drawer-overlay" data-close-detail></div>
+        <div class="drawer-panel">
+            <button type="button" class="drawer-close" data-close-detail aria-label="关闭详情">×</button>
+            <div id="detail-content" class="detail-content"></div>
+        </div>
+    </aside>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script type="module" src="/assets/app.js"></script>
+</body>
+</html>

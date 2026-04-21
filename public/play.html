@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny影视播放页 | 本地播放器调试</title>
+    <meta name="description" content="Sunny影视播放页，基于红牛资源 JSON API 的本地播放器调试页面，支持独立播放、上下集切换和相关推荐。">
+    <meta name="theme-color" content="#08101d">
+    <meta property="og:title" content="Sunny影视播放页">
+    <meta property="og:description" content="支持独立播放、上下集导航和相关推荐的本地播放器页面。">
+    <meta property="og:type" content="video.other">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <div class="play-shell">
+        <header class="site-header">
+            <div class="header-bar">
+                <a class="brand" href="/" aria-label="返回首页">
+                    <span class="brand-mark">SY</span>
+                    <span class="brand-copy">
+                        <strong>Sunny影视</strong>
+                        <small>Player View</small>
+                    </span>
+                </a>
+
+                <nav class="header-nav" aria-label="播放器操作">
+                    <a href="/" class="nav-pill nav-link">返回首页</a>
+                    <button id="copy-player-link" type="button" class="nav-pill">复制链接</button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <section class="player-page-grid">
+                <article class="player-stage">
+                    <div class="section-head">
+                        <div>
+                            <p class="eyebrow">NOW PLAYING</p>
+                            <h1 id="play-title">正在准备播放页</h1>
+                        </div>
+                        <div id="play-meta" class="summary-text">正在加载影片信息...</div>
+                    </div>
+
+                    <div class="standalone-player-frame">
+                        <video id="play-video" controls playsinline preload="metadata" class="hidden"></video>
+                        <iframe id="play-iframe" class="hidden" allow="autoplay; fullscreen" referrerpolicy="no-referrer"></iframe>
+                        <div id="play-message" class="player-message">正在载入播放资源...</div>
+                    </div>
+
+                    <div class="player-actions-bar">
+                        <button id="prev-episode" type="button" class="ghost-button">上一集</button>
+                        <button id="next-episode" type="button" class="ghost-button">下一集</button>
+                    </div>
+                </article>
+
+                <aside class="player-sidebar">
+                    <section class="section-block compact-section">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">DETAIL</p>
+                                <h2>影片信息</h2>
+                            </div>
+                        </div>
+                        <div id="play-detail" class="play-detail"></div>
+                    </section>
+
+                    <section class="section-block compact-section">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">EPISODES</p>
+                                <h2>选集列表</h2>
+                            </div>
+                        </div>
+                        <div id="play-episode-grid" class="episode-grid"></div>
+                    </section>
+
+                    <section class="section-block compact-section">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">RECOMMENDATION</p>
+                                <h2>相关推荐</h2>
+                            </div>
+                        </div>
+                        <div id="related-grid" class="related-grid"></div>
+                    </section>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <div id="play-toast" class="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script type="module" src="/assets/play.js"></script>
+</body>
+</html>

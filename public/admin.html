@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny影视 | 资源接口管理</title>
+    <meta name="description" content="Sunny影视资源接口可配置化管理后台，支持多影视资源接口的新增、编辑、启停、测试、导入导出和调用日志查看。">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="admin-body">
+    <div class="app-shell">
+        <header class="site-header">
+            <div class="header-bar">
+                <a class="brand" href="/" aria-label="Sunny影视首页">
+                    <span class="brand-mark">SY</span>
+                    <span class="brand-copy">
+                        <strong>Sunny影视</strong>
+                        <small>Resource Admin</small>
+                    </span>
+                </a>
+
+                <nav class="header-nav" aria-label="主导航">
+                    <a class="nav-pill nav-link" href="/">前台首页</a>
+                    <a class="nav-pill nav-link is-active" href="/admin.html">接口管理</a>
+                </nav>
+            </div>
+
+            <section class="hero-panel admin-hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">RESOURCE PROVIDERS</p>
+                    <h1>把影视资源接口做成可扩展的配置中心</h1>
+                    <p class="hero-text">
+                        这里集中管理多个影视资源接口配置。你可以新增新的资源源站，配置请求地址、参数模板、认证方式、解析规则与优先级，
+                        并通过统一适配层让前台继续只访问本地 `/api/*`。
+                    </p>
+                    <div class="hero-stats admin-stats">
+                        <div class="stat-card">
+                            <span>配置能力</span>
+                            <strong>增删改查 / 启停</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>适配方式</span>
+                            <strong>模板化请求 + 解析规则</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>追踪能力</span>
+                            <strong>调用日志 / 导入导出</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card admin-summary-card">
+                    <div class="search-title-row">
+                        <div>
+                            <p class="eyebrow">CONTROL PANEL</p>
+                            <h2>接口配置总览</h2>
+                        </div>
+                        <button id="refresh-admin" type="button" class="ghost-button">刷新数据</button>
+                    </div>
+
+                    <div class="admin-overview-grid">
+                        <article class="admin-metric-card">
+                            <span>接口总数</span>
+                            <strong id="provider-count">0</strong>
+                        </article>
+                        <article class="admin-metric-card">
+                            <span>启用数量</span>
+                            <strong id="provider-enabled-count">0</strong>
+                        </article>
+                        <article class="admin-metric-card">
+                            <span>最近日志</span>
+                            <strong id="log-count">0</strong>
+                        </article>
+                    </div>
+
+                    <div class="admin-selection-panel">
+                        <div class="provider-detail-card">
+                            <span>当前接口策略</span>
+                            <strong id="selection-mode-label">自动选择</strong>
+                        </div>
+                        <div class="provider-detail-card">
+                            <span>当前命中接口</span>
+                            <strong id="selection-provider-label">未指定</strong>
+                        </div>
+                        <button id="set-auto-selection" type="button" class="ghost-button">切回自动</button>
+                    </div>
+
+                    <div class="admin-toolbar">
+                        <button id="create-provider" type="button" class="primary-button">新增接口</button>
+                        <button id="export-config" type="button" class="ghost-button">导出配置</button>
+                        <label class="ghost-button file-trigger">
+                            <input id="import-config" type="file" accept="application/json">
+                            导入配置
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="page-content admin-content">
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">PROVIDER LIST</p>
+                        <h2>资源接口配置</h2>
+                    </div>
+                    <div id="provider-summary" class="summary-text">正在加载接口配置...</div>
+                </div>
+                <div id="provider-list" class="provider-list"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">CALL LOGS</p>
+                        <h2>接口调用日志</h2>
+                    </div>
+                    <div class="summary-text">记录请求参数、耗时、结果状态，方便排查多接口适配问题。</div>
+                </div>
+                <div id="log-list" class="log-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <aside id="provider-modal" class="detail-drawer admin-drawer" aria-hidden="true">
+        <div class="drawer-overlay" data-close-modal></div>
+        <div class="drawer-panel admin-modal-panel">
+            <button type="button" class="drawer-close" data-close-modal aria-label="关闭配置弹窗">×</button>
+            <div class="detail-content admin-form-wrap">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">EDIT PROVIDER</p>
+                        <h2 id="modal-title">新增接口配置</h2>
+                    </div>
+                    <div class="summary-text">支持以当前红牛资源配置为模板快速扩展新的接口。</div>
+                </div>
+
+                <form id="provider-form" class="admin-form">
+                    <input id="provider-id" type="hidden">
+
+                    <div class="admin-form-grid">
+                        <label class="field-group">
+                            <span>接口名称</span>
+                            <input id="provider-name" type="text" placeholder="例如：红牛资源 / 备用源">
+                        </label>
+
+                        <label class="field-group">
+                            <span>接口类型</span>
+                            <input id="provider-type" type="text" value="mac-cms-v10-json" placeholder="mac-cms-v10-json">
+                        </label>
+
+                        <label class="field-group">
+                            <span>请求方式</span>
+                            <select id="provider-method">
+                                <option value="GET">GET</option>
+                                <option value="POST">POST</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>优先级</span>
+                            <input id="provider-priority" type="number" value="100" min="0" step="1">
+                        </label>
+
+                        <label class="field-group">
+                            <span>超时时间(ms)</span>
+                            <input id="provider-timeout" type="number" value="12000" min="1000" step="500">
+                        </label>
+
+                        <label class="field-group toggle-field">
+                            <span>启用状态</span>
+                            <input id="provider-enabled" type="checkbox" checked>
+                        </label>
+                    </div>
+
+                    <label class="field-group field-group-full">
+                        <span>请求 URL</span>
+                        <input id="provider-url" type="text" placeholder="https://example.com/api.php/provide/vod/from/xxx/at/json/">
+                    </label>
+
+                    <label class="field-group field-group-full">
+                        <span>备用 URL（每行一个）</span>
+                        <textarea id="provider-fallbacks" rows="3" placeholder="https://example.com/fallback-1&#10;https://example.com/fallback-2"></textarea>
+                    </label>
+
+                    <div class="admin-form-grid">
+                        <label class="field-group">
+                            <span>认证方式</span>
+                            <select id="provider-auth-type">
+                                <option value="none">无认证</option>
+                                <option value="bearer">Bearer Token</option>
+                                <option value="header-key">Header Key</option>
+                                <option value="query-key">Query Key</option>
+                                <option value="basic">Basic Auth</option>
+                            </select>
+                        </label>
+
+                        <label class="field-group">
+                            <span>Token / 密钥</span>
+                            <input id="provider-auth-token" type="text" placeholder="可选">
+                        </label>
+
+                        <label class="field-group">
+                            <span>Header 名称</span>
+                            <input id="provider-auth-header" type="text" placeholder="例如 Authorization 或 X-API-Key">
+                        </label>
+
+                        <label class="field-group">
+                            <span>Query 参数名</span>
+                            <input id="provider-auth-query" type="text" placeholder="例如 api_key">
+                        </label>
+
+                        <label class="field-group">
+                            <span>Basic 用户名</span>
+                            <input id="provider-auth-username" type="text" placeholder="可选">
+                        </label>
+
+                        <label class="field-group">
+                            <span>Basic 密码</span>
+                            <input id="provider-auth-password" type="password" placeholder="可选">
+                        </label>
+                    </div>
+
+                    <label class="field-group field-group-full">
+                        <span>请求参数模板(JSON)</span>
+                        <textarea id="provider-request-template" rows="12"></textarea>
+                    </label>
+
+                    <label class="field-group field-group-full">
+                        <span>响应解析规则(JSON)</span>
+                        <textarea id="provider-parse-rules" rows="14"></textarea>
+                    </label>
+
+                    <label class="field-group field-group-full">
+                        <span>默认请求头(JSON)</span>
+                        <textarea id="provider-headers" rows="8"></textarea>
+                    </label>
+
+                    <label class="field-group field-group-full">
+                        <span>备注</span>
+                        <textarea id="provider-notes" rows="3" placeholder="接口用途、限制说明、接入备注"></textarea>
+                    </label>
+
+                    <div class="search-actions">
+                        <button type="submit" class="primary-button">保存配置</button>
+                        <button id="cancel-provider" type="button" class="ghost-button">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+
+    <div id="toast" class="toast"></div>
+    <script type="module" src="/assets/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny影视 | 统计分析</title>
+    <meta name="description" content="Sunny影视统计分析面板，提供全面的数据可视化展示与详细数据统计。">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="admin-body">
+    <div class="app-shell">
+        <header class="site-header">
+            <div class="header-bar">
+                <a class="brand" href="/" aria-label="Sunny影视首页">
+                    <span class="brand-mark">SY</span>
+                    <span class="brand-copy">
+                        <strong>Sunny影视</strong>
+                        <small>Analytics</small>
+                    </span>
+                </a>
+
+                <nav class="header-nav" aria-label="主导航">
+                    <a class="nav-pill nav-link" href="/">前台首页</a>
+                    <a class="nav-pill nav-link" href="/admin.html">接口管理</a>
+                    <a class="nav-pill nav-link is-active" href="/analytics.html">统计分析</a>
+                </nav>
+            </div>
+
+            <section class="hero-panel admin-hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">DATA ANALYTICS</p>
+                    <h1>数据驱动，洞察用户</h1>
+                    <p class="hero-text">
+                        完整掌握网站运营数据，包括用户访问、内容表现、用户行为等多维度统计分析。
+                        支持实时数据更新、多时间维度筛选和数据导出。
+                    </p>
+                    <div class="hero-stats admin-stats">
+                        <div class="stat-card">
+                            <span>用户访问</span>
+                            <strong>日/周/月趋势</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>内容数据</span>
+                            <strong>热门影片排行</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>用户行为</span>
+                            <strong>观看时长与完播</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card admin-summary-card">
+                    <div class="search-title-row">
+                        <div>
+                            <p class="eyebrow">CONTROL PANEL</p>
+                            <h2>统计概览</h2>
+                        </div>
+                        <button id="refresh-analytics" type="button" class="ghost-button">刷新数据</button>
+                    </div>
+
+                    <div class="analytics-time-filter">
+                        <div class="time-range-buttons">
+                            <button type="button" class="time-btn" data-preset="today">今日</button>
+                            <button type="button" class="time-btn" data-preset="yesterday">昨日</button>
+                            <button type="button" class="time-btn is-active" data-preset="7d">近7天</button>
+                            <button type="button" class="time-btn" data-preset="30d">近30天</button>
+                        </div>
+                        <div class="custom-date-range">
+                            <label class="field-group">
+                                <span>开始日期</span>
+                                <input type="date" id="date-from">
+                            </label>
+                            <label class="field-group">
+                                <span>结束日期</span>
+                                <input type="date" id="date-to">
+                            </label>
+                            <button type="button" id="apply-custom-range" class="primary-button">应用</button>
+                        </div>
+                    </div>
+
+                    <div class="analytics-export-bar">
+                        <button type="button" id="export-json" class="ghost-button">导出 JSON</button>
+                        <button type="button" id="export-csv" class="ghost-button">导出 CSV</button>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="page-content analytics-content">
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">KEY METRICS</p>
+                        <h2>核心指标</h2>
+                    </div>
+                    <div class="summary-text">实时展示网站运营的关键数据指标</div>
+                </div>
+                <div class="metrics-grid" id="metrics-grid"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">VISIT TRENDS</p>
+                        <h2>访问趋势</h2>
+                    </div>
+                    <div class="summary-text">查看日访问量的变化趋势</div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="visits-chart"></canvas>
+                </div>
+            </section>
+
+            <div class="analytics-two-columns">
+                <section class="section-block">
+                    <div class="section-head">
+                        <div>
+                            <p class="eyebrow">CATEGORY DISTRIBUTION</p>
+                            <h2>分类占比</h2>
+                        </div>
+                        <div class="summary-text">各类别影片的观看占比分析</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="categories-chart"></canvas>
+                    </div>
+                </section>
+
+                <section class="section-block">
+                    <div class="section-head">
+                        <div>
+                            <p class="eyebrow">GEO DISTRIBUTION</p>
+                            <h2>地域分布</h2>
+                        </div>
+                        <div class="summary-text">用户访问的地域分布情况</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="geo-chart"></canvas>
+                    </div>
+                </section>
+            </div>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">TOP RANKINGS</p>
+                        <h2>热门影片排行</h2>
+                    </div>
+                    <div class="summary-text">按观看次数统计的热门影片</div>
+                </div>
+                <div id="top-items-list" class="top-items-list"></div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">BEHAVIOR ANALYSIS</p>
+                        <h2>用户行为分析</h2>
+                    </div>
+                    <div class="summary-text">平均观看时长、完播率、留存率等指标</div>
+                </div>
+                <div class="behavior-grid" id="behavior-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <script type="module" src="/assets/analytics.js"></script>
+</body>
+</html>
